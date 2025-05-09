@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .app-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  p {
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .upload-container {
+    border: 2px dashed #c3cfe2;
+    border-radius: 8px;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .upload-container:hover {
+    border-color: #6c63ff;
+  }
+  
+  .upload-container.active {
+    border-color: #6c63ff;
+    background-color: rgba(108, 99, 255, 0.05);
+  }
+  
+  .file-input {
+    display: none;
+  }
+  
+  .upload-icon {
+    font-size: 48px;
+    color: #c3cfe2;
+    margin-bottom: 15px;
+  }
+  
+  .upload-text {
+    color: #666;
+    margin-bottom: 0;
+  }
+  
+  .process-btn {
+    background: #6c63ff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .process-btn:hover {
+    background: #5a52d5;
+  }
+  
+  .process-btn:disabled {
+    background: #c3cfe2;
+    cursor: not-allowed;
+  }
+  
+  .audio-player {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .audio-container {
+    margin-top: 30px;
+  }
+  
+  .audio-title {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  .download-btn {
+    background: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+  }
+  
+  .download-btn:hover {
+    background: #43a047;
+  }
+  
+  .loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255,255,255,.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s ease-in-out infinite;
+    margin-right: 10px;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
